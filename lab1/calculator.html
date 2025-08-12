@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  <div class="global-top-bar">
+    <div style="display: flex; align-items: center;">
+      <img src="spotify-logo.svg" alt="Spotify Logo" class="top-bar-logo">
+      <span class="global-top-bar-title">Spotify</span>
+    </div>
+  </div>
+
+  <div id="container">
+    <div class="calculator">
+
+
+      <div id="result" class="result">0</div>
+
+      <div class="engineering-mode-toolbar" style="display: none; flex-direction: column;">
+        <div class="row">
+          <button class="my-btn secondary" id="btn_op_square">x²</button>
+          <button class="my-btn secondary" id="btn_op_sqrt">√</button>
+          <button class="my-btn secondary" id="btn_op_fact">!</button>
+          <button class="my-btn secondary tall-button" id="btn_op_backspace">←</button>
+        </div>
+        <div class="row">
+          <button class="my-btn secondary" id="btn_op_000">000</button>
+          <button class="my-btn secondary" id="btn_op_div10">÷10</button>
+          <button class="my-btn secondary" id="btn_op_sin">sin</button>
+          <button class="my-btn secondary" id="btn_op_cos">cos</button>
+        </div>
+      </div>
+      
+
+      <div class="row">
+        <button class="my-btn secondary" id="btn_op_clear">C</button>
+        <button class="my-btn secondary" id="btn_op_plusminus">+/-</button>
+        <button class="my-btn secondary" id="btn_op_percent">%</button>
+        <button class="my-btn primary" id="btn_op_div">/</button>
+      </div>
+
+      <div class="row">
+        <button class="my-btn" id="btn_digit_7">7</button>
+        <button class="my-btn" id="btn_digit_8">8</button>
+        <button class="my-btn" id="btn_digit_9">9</button>
+        <button class="my-btn primary" id="btn_op_mult">x</button>
+      </div>
+
+      <div class="row">
+        <button class="my-btn" id="btn_digit_4">4</button>
+        <button class="my-btn" id="btn_digit_5">5</button>
+        <button class="my-btn" id="btn_digit_6">6</button>
+        <button class="my-btn primary" id="btn_op_minus">-</button>
+      </div>
+
+      <div class="row">
+        <button class="my-btn" id="btn_digit_1">1</button>
+        <button class="my-btn" id="btn_digit_2">2</button>
+        <button class="my-btn" id="btn_digit_3">3</button>
+        <button class="my-btn primary" id="btn_op_plus">+</button>
+      </div>
+
+      <div class="row">
+        <button class="my-btn" id="btn_digit_0">0</button>
+        <button class="my-btn" id="btn_digit_.">.</button>
+        <button class="my-btn" id="btn_op_f">F</button>
+        <button class="my-btn primary execute" id="btn_op_equal">=</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="global-bottom-bar">
+    <span class="global-bottom-bar-text">© 2025 Spotify Calculator</span>
+    <button id="about-me-link" class="global-bottom-bar-button">Обо мне</button>
+    <button id="about-lab-link" class="global-bottom-bar-button">О лабораторной</button>
+  </div>
+  
+</body>
+</html>

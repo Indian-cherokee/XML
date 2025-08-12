@@ -1,0 +1,299 @@
+
+:root {
+    --spotify-green: #1DB954;
+    --spotify-dark: #181818;
+    --spotify-light: #f5f5f5;
+    --spotify-gray: #535353;
+    --spotify-light-gray: #b3b3b3;
+    --spotify-hover-gray: #6a6a6a;
+    --font-light: 'Arial', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    font-family: var(--font-light);
+    background-color: var(--spotify-dark);
+    transition: background 0.5s ease;
+  }
+  
+  
+  body.light-theme {
+    background-image: url('fon.png');
+    background-size: cover;
+    background-position: center;
+    background-color: unset;
+  }
+  
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 150px);
+    position: relative;
+    z-index: 10;
+  }
+  
+  .calculator {
+    background: #202020;
+    padding: 20px;
+    border-radius: 20px;
+    color: var(--spotify-light-gray);
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .result {
+    width: 230px; /* Максимальная ширина */
+    height: 50px;
+    margin-bottom: 15px;
+    padding-right: 10px;
+    background: #101010;
+    text-align: right;
+    color: var(--spotify-light-gray);
+    font-size: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .my-btn {
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    border: none;
+    background: var(--spotify-gray);
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s ease, transform 0.1s ease;
+  }
+  
+  .my-btn:hover {
+    background: var(--spotify-hover-gray);
+  }
+  
+  .my-btn:active {
+    transform: scale(0.95);
+    filter: brightness(120%);
+  }
+  
+  .my-btn.primary {
+    background: var(--spotify-green);
+    color: #000;
+  }
+  
+  .my-btn.primary:hover {
+    background: #1ed760;
+  }
+  
+  .my-btn.secondary {
+    background: #2e2e2e;
+  }
+  
+  .my-btn.secondary:hover {
+    background: #444;
+  }
+  
+  .my-btn.execute {
+    width: 50px;
+    border-radius: 10px;
+    background: var(--spotify-green);
+    color: #000;
+  }
+  
+  .highlight {
+    background-color: yellow;
+    font-weight: bold;
+  }
+  
+  button#theme-toggle {
+    margin-top: 0px;
+    background: #3c3c3c;
+  }
+  
+  details summary {
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  
+  select {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: var(--spotify-gray);
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .global-top-bar {
+    width: 100%;
+    height: 75px;
+    background-color: #242424;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    font-family: var(--font-light);
+  }
+
+  .navigation-buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .nav-btn {
+    padding: 8px 16px;
+    background-color: var(--spotify-green);
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    text-decoration: none;
+  }
+
+  .nav-btn:hover {
+    background-color: #1ed760;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(29, 185, 84, 0.3);
+  }
+
+  .nav-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(29, 185, 84, 0.3);
+  }
+  
+  .global-top-bar-title {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  
+  .top-bar-logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .global-bottom-bar {
+    width: 100%;
+    height: 75px;
+    background-color: #242424; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-family: var(--font-light);
+    position: relative;
+  }
+  
+  .global-bottom-bar-text {
+    color: white;
+    font-size: 0.95rem;
+  }
+  
+  #theme-toggle {
+    margin-left: 20px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    font-size: 0.9rem;
+  }
+  
+  #theme-toggle:hover {
+    background-color: #585858;
+  }
+  
+  #theme-toggle:active {
+    transform: scale(0.95);
+    filter: brightness(120%);
+  }
+  
+  
+  .global-bottom-bar-button {
+    margin-left: 20px;
+    padding: 5px 10px;
+  
+    background-color: #3c3c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    font-size: 0.9rem;
+  }
+  
+  .global-bottom-bar-button:hover {
+    background-color: #555;
+  }
+  
+  .global-bottom-bar-button:active {
+    transform: scale(0.95);
+    filter: brightness(120%);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Для панели инженерных кнопок */
+  .engineering-mode-toolbar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Для кнопок инженерного режима */
+  .engineering-mode-toolbar .my-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    margin: 5px;
+  }
+  
+  .my-btn.secondary {
+    background-color: #3e3e3e;
+  }
+  
+  .my-btn.primary {
+    background-color: var(--spotify-green);
+    color: black;
+  }
+  
+  .jump {
+    animation: jump 0.5s ease;
+  }
+  
+  @keyframes jump {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
