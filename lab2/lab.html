@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Обо мне</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  <div class="global-top-bar">
+    <img src="spotify-logo.svg" alt="Spotify Logo" class="top-bar-logo">
+    <span class="global-top-bar-title">Spotify</span>
+  </div>
+
+  <div id="container">
+    <div class="calculator">
+      <h2>О лабораторной работе</h2>
+      <p>Студент: Никифоров Артём Юрьевич</p>
+      <p>Группа: ИУ5-43Б</p>
+      <p>Цель данной лабораторной работы - <mark>знакомство</mark> с инструментами построения пользовательских интерфейсов web-сайтов: <mark>HTML</mark>, <mark>CSS</mark>. В ходе выполнения работы, вам предстоит ознакомиться с кодом реализации простого калькулятора, и затем выполнить задания по варианту.</p>
+    </div>
+  </div>
+  <script>
+    document.querySelector(".top-bar-logo").onclick = function () {
+      window.location.href = "calculator.html"; 
+    };
+  </script>
+</body>
+</html>
