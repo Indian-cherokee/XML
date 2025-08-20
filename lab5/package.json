@@ -1,0 +1,17 @@
+{
+  "name": "spotify-artists-lab5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "Spotify Artists App - Lab 5 (Frontend + NestJS Backend)",
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+} 
