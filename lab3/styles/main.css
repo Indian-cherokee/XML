@@ -1,0 +1,147 @@
+/* Основные стили для Spotify приложения */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Стили для карточек артистов */
+.card {
+    border: 1px solid #333;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Стили для аккордеона */
+.accordion-item {
+    border: 1px solid #333;
+}
+
+.accordion-button {
+    color: #ffffff !important;
+    background-color: #1db954 !important;
+    border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #1ed760 !important;
+    color: #ffffff !important;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(29, 185, 84, 0.25);
+}
+
+.accordion-body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* Стили для кнопок */
+.btn-success {
+    background-color: #1db954;
+    border-color: #1db954;
+}
+
+.btn-success:hover {
+    background-color: #1ed760;
+    border-color: #1ed760;
+}
+
+.btn-primary {
+    background-color: #1db954;
+    border-color: #1db954;
+}
+
+.btn-primary:hover {
+    background-color: #1ed760;
+    border-color: #1ed760;
+}
+
+/* Стили для поиска */
+.search-container {
+    max-width: 400px;
+}
+
+.form-control {
+    background-color: #282828;
+    border: 1px solid #333;
+    color: #ffffff;
+}
+
+.form-control:focus {
+    background-color: #282828;
+    border-color: #1db954;
+    color: #ffffff;
+    box-shadow: 0 0 0 0.25rem rgba(29, 185, 84, 0.25);
+}
+
+/* Стили для модального окна */
+.modal-content {
+    background-color: #282828;
+    border: 1px solid #333;
+}
+
+.modal-header {
+    border-bottom: 1px solid #333;
+}
+
+.modal-footer {
+    border-top: 1px solid #333;
+}
+
+/* Стили для заголовка */
+.header-section {
+    background: linear-gradient(135deg, #1db954 0%, #1ed760 100%);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.header-section h1 {
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .header-section {
+        padding: 15px;
+    }
+    
+    .search-container {
+        max-width: 100%;
+        margin: 15px 0;
+    }
+    
+    .d-flex.justify-content-between {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
